@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    text-align: center; /* テキストを左右中央に揃える */
+    padding: 20px; /* 上下のパディングを追加（オプション） */
+    background-color: #ffffff; /* 背景色を設定（オプション） */
+}
+
+h1 {
+    margin: 0; /* デフォルトのマージンをリセット */
+    font-size: 24px; /* 任意のフォントサイズを設定、例として24px */
+    color: rgb(17, 17, 17); /* RGB値でフォントのカラーを指定 */
+}
+
+.header-image {
+    max-width: 100%; /* 画像の幅を親要素に合わせる */
+    height: auto; /* 画像の高さを自動調整 */
+    display: block; /* 画像をブロック要素にする */
+    margin: 50px auto 20px; /* 画像の下にマージンを追加 */
+}
+
+
+
+.content-container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: flex-start; /* コンテンツを均等に配置 */
+    flex-wrap: wrap; /* 必要に応じて折り返し */
+}
+
+.content-item {
+    width: 150px; /* 各コンテンツの幅を指定 */
+    text-align: left; /* テキストを中央揃え */
+    margin: 10px; /* コンテンツ間のマージンを追加 */
+}
+
+.content-item img,
+.content-item p {
+    display: inline-block;
+    vertical-align: middle; /* 画像とテキストを上端に揃える */
+    color: rgb(67, 67, 67); /* RGB値でフォントのカラーを指定 */
+}
+
+.content-item img {
+    max-width: 35%; /* 画像の幅を親要素に合わせる */
+    height: 35%; /* 画像の高さを自動調整 */
+}
